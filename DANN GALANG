@@ -1,0 +1,53 @@
+// Experiment 3
+
+#include <iostream>
+#include <string>
+#include <conio.h>
+
+using namespace std;
+
+int main ()
+{
+	float NetBalance;
+	float Payment;
+	float D1;
+	float D2;
+	float InterestPerMonth;
+
+	cout << "Net Balance: " << endl;
+	cin >> NetBalance;
+
+	cout<< " " << endl;
+	cout<< " " << endl;
+	cout<< " " << endl;
+	cout << "Payment: " << endl;
+	cin >> Payment;
+
+	cout<< " " << endl;
+	cout<< " " << endl;
+	cout<< " " << endl;
+	cout << "Enter the number of days in the billing cycle: " << endl;
+	cin >> D1;
+
+	cout<< " " << endl;
+	cout<< " " << endl;
+	cout<< " " << endl;
+	cout << "Enter the number of days payment is made after billing cycle:" << endl;
+	cin >> D2;
+
+	cout<< " " << endl;
+	cout<< " " << endl;
+	cout<< " " << endl;
+	cout << "Enter the Interest Rate per Month:" << endl;
+	cin >> InterestPerMonth;
+
+	cout<< " " << endl;
+	cout<< " " << endl;
+	cout<< " " << endl;
+	cout<< " " << endl;
+	float aveDailyBalance = ((NetBalance * D1) - (Payment * D2)) / D1;
+
+	cout << "Your interest is: " << aveDailyBalance * InterestPerMonth << endl;
+	_getch ();
+	return 0;
+}
